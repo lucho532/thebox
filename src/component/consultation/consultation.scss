@@ -1,0 +1,47 @@
+.consultation{
+    width: 100%;
+    height: 300px;
+    background-image: url('../../assets/img/consultationfree.png');
+    .consultation-container{
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        position: relative;
+        
+        h2{
+            width: 754px;
+            height: 42px;
+            font-size: 30px;
+            font-weight: bold;
+            color: #ffffff;
+            padding-top: 100px;
+            padding-left: 112px;
+            padding-bottom: 30px;
+        }
+        .just{
+            width: 396px;
+            height: 28px;
+            color: #ffffff;
+            padding-top: 100px;
+            padding-left: 112px;
+        }
+        .parrafo{
+            width: 232px;
+            height: 53px;
+            border: 1px solid white;
+            position: absolute;
+            left: 1008px;
+            top: 124px;
+           
+            .parrafo-div{
+                width: 192px;
+                height: 21px;
+                font-size: 16px;
+                color: #ffffff;
+                padding: 16px 20px;
+                
+                
+            }
+        }
+    }
+}
