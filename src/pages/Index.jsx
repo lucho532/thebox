@@ -6,6 +6,7 @@ import About from "../component/about/About";
 import Services from "../component/servicess/Services";
 import Experience from "../component/experience/Experience";
 import Consultation from "../component/consultation/Consultation";
+import Projects from "../component/projectss/Projects";
 const Index = () => {
   return (
     <section>
@@ -16,6 +17,7 @@ const Index = () => {
       <Services />
       <Experience />
       <Consultation />
+      <Projects />
     </section>
   );
 };
