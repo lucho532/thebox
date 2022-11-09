@@ -6,19 +6,50 @@ import parkinstone from "../../assets/img/parkinstone.png";
 import oregano from "../../assets/img/oregano.png";
 import left from "../../assets/img/left.png";
 import right from "../../assets/img/right.png";
-import elipse from "../../assets/img/Ellipse 30.png";
 
 const Projects = () => {
+  const handleClick = (e) => {
+    const selectItem = e.target;
+    const listItem = document.getElementsByClassName("project-ul-li");
+    for (let item of listItem) {
+      item.classList.remove("li-selected");
+    }
+    selectItem.classList.add("li-selected");
+  };
   return (
     <div className="projects-section">
       <div className="projects-container">
         <div className="projects-menu">
           <h3>Projects</h3>
           <ul className="list">
-            <li>All</li>
-            <li>Commercial</li>
-            <li>Residential</li>
-            <li>Other</li>
+            <li
+              onClick={(e) => handleClick(e)}
+              id="all"
+              className="project-ul-li li-selected"
+            >
+              All
+            </li>
+            <li
+              onClick={(e) => handleClick(e)}
+              id="comercial"
+              className="project-ul-li"
+            >
+              Commercial
+            </li>
+            <li
+              onClick={(e) => handleClick(e)}
+              id="residential"
+              className="project-ul-li"
+            >
+              Residential
+            </li>
+            <li
+              onClick={(e) => handleClick(e)}
+              id="other"
+              className="project-ul-li"
+            >
+              Other
+            </li>
           </ul>
         </div>
         <div className="projects-carrusel">

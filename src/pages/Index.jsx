@@ -7,6 +7,8 @@ import Services from "../component/servicess/Services";
 import Experience from "../component/experience/Experience";
 import Consultation from "../component/consultation/Consultation";
 import Projects from "../component/projectss/Projects";
+import Login from "../component/login/Login";
+import Footer from "../component/footer/Footer";
 const Index = () => {
   return (
     <section>
@@ -18,6 +20,8 @@ const Index = () => {
       <Experience />
       <Consultation />
       <Projects />
+      <Login />
+      <Footer />
     </section>
   );
 };
